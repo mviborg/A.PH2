@@ -1,0 +1,643 @@
+/* progressbar*/
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.header h2 {
+	text-align: center;
+}
+
+.progress-container {
+	width: 100%;
+	height: 8px;
+	background: #ccc;
+}
+
+.progress-bar {
+	height: 8px;
+	background: #4caf50;
+	width: 0%;
+}
+
+.content {
+	padding: 100px 0;
+	margin: 50px auto 0 auto;
+	width: 80%;
+}
+
+
+/* Start*/
+
+body {
+	font-family: arial;
+	background-color: white;
+}
+
+/* Forsiden */
+
+.Forside-billede {
+	background-image: url(billeder/forside.png);
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	margin: 2%;
+}
+
+/* overskrift */
+
+#overskrift {
+	text-align: center;
+	font-size: 600%;
+	padding-top: 6%;
+	color: white;
+	font-family: 'Arapey', serif;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+}
+
+/* underoverskrift */
+
+#underskrift {
+	text-align: center;
+	font-size: 200%;
+	color: transparent;
+	text-shadow: 0 5px 5px rgb(104, 144, 195);
+	transition: all 0.5s;
+	padding-top: 2%;
+	padding-bottom: 30%;
+	font-family: 'Arapey', serif;
+}
+
+#underskrift:hover {
+	color: white;
+	text-shadow: none;
+}
+
+/* knap */
+
+#arrow {
+	position: absolute;
+	top: 80%;
+	width: 51.5%;
+	padding-left: 48%;
+	animation-name: arrow;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+
+@-webkit-keyframes arrow {
+	0% {
+		transform: translateY(-10px)
+	}
+	50% {
+		transform: translateY(+10px)
+	}
+	100% {
+		transform: translateY(-10px)
+	}
+}
+
+
+/* Første slideshow */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.mySlides {
+	display: none;
+	width: 280%;
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+#citat {
+	font-size: 500%;
+	color: white;
+	font-family: 'Arapey', serif;
+	text-align: center;
+	padding-top: 23%;
+	text-transform: uppercase;
+	text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+	padding-bottom: 28%;
+}
+
+/* underoverskrift3 */
+
+article {
+	background: #F5F5DC;
+
+}
+
+#stjerner {
+	text-align: center;
+	font-size: 300%;
+	padding: 4%;
+	font-weight: bold;
+}
+
+#stjerner-billede {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.gul:hover {
+	animation: fadeout .5s ease forwards;
+}
+
+@keyframes fadeout {
+	to {
+		opacity: 0.5;
+	}
+}
+
+
+#border1 {
+	border-top: solid;
+	padding-bottom: 3%;
+	width: 20%;
+	display: block;
+	margin: auto;
+}
+
+
+#border {
+	border-top: solid;
+	width: 20%;
+	display: block;
+	margin: auto;
+}
+
+
+#om {
+	padding-top: 2%;
+	color: black;
+	text-align: center;
+	font-size: 120%;
+	line-height: 200%;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: justify;
+	padding-bottom: 4%;
+}
+
+/* video */
+
+video {
+	min-height: 100%;
+	min-width: 100%;
+	object-fit: contain;
+}
+
+
+/* Scrolling billede */
+
+.parallax {
+	/* The image used */
+	background-image: url(billeder/filippinerne.jpg);
+
+	/* Set a specific height */
+	min-height: 600px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax2 {
+	/* The image used */
+	background-image: url(billeder/ff.jpg);
+
+	/* Set a specific height */
+	min-height: 600px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* popup*/
+
+#popup-overskrift {
+	font-size: 300%;
+	font-family: 'Arapey', serif;
+	text-align: center;
+	padding-top: 3%;
+	text-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 30px auto;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	margin: 8%;
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+
+}
+
+@-moz-keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@-o-keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.round {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 160px;
+	text-decoration: none;
+	font-size: 40px;
+	color: white;
+	text-shadow: 0 1px 0 grey;
+	letter-spacing: -1px;
+	-webkit-transition: all .60s ease-in-out;
+	-o-transition: all .60s ease-in-out;
+	-moz-transition: all .60s ease-in-out;
+	transition: all .60s ease-in-out;
+	box-shadow: 2px 2px 7px grey;
+	border-radius: 300px;
+	z-index: 1;
+	border-width: 4px;
+	border-style: solid;
+}
+
+.round:hover {
+	width: 120%;
+	height: 120%;
+	left: -10%;
+	top: -10%;
+	font-size: 33px;
+	padding-top: 38px;
+	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+	-o-box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+	z-index: 2;
+	border: 5px;
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}
+
+
+p.red {
+	background-image: url(billeder/rund.jpg);
+	border-color: transparent;
+}
+
+p.red:hover {
+	color: rgb(104, 144, 195);
+}
+
+p.green {
+	background-image: url(billeder/islandhouse.jpg);
+	border-color: transparent;
+}
+
+p.green:hover {
+	color: rgba(1, 151, 171, 1);
+}
+
+.round span.round {
+	display: block;
+	opacity: 0;
+	-webkit-transition: all .30s ease-in-out;
+	-moz-transition: all .30s ease-in-out;
+	-o-transition: all .30s ease-in-out;
+	transition: all .30s ease-in-out;
+	font-size: 1px;
+	border: none;
+	padding: 30% 20% 0 20%;
+	color: #fff;
+}
+
+.round span:hover {
+	opacity: .85;
+	font-size: 16px;
+	-webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+	-moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+	-o-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+}
+
+.green span {
+	background: rgb(104, 144, 195);
+}
+
+.red span {
+	background: rgb(104, 144, 195);
+}
+
+span {
+	line-height: 190%;
+}
+
+/* slide 6-billede*/
+
+div.background {
+	background: url(billeder/stortbilledehvid.png) no-repeat;
+	height: 100%;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 60%;
+
+}
+
+#thomas {
+	display: block;
+	margin-left: 70%;
+	margin-right: auto;
+}
+
+/* Historien bag*/
+
+.strand-billede {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+
+}
+
+#strand-tekst-overskrift {
+	z-index: +1;
+	position: absolute;
+	font-size: 600%;
+	font-family: 'Arapey', serif;
+	line-height: 150%;
+	margin: 5%;
+	padding-top: 7%;
+}
+
+#strand-tekst {
+	column-count: 2;
+	z-index: +1;
+	padding-top: 16%;
+	position: absolute;
+	font-size: 100%;
+	line-height: 170%;
+	margin: 5%;
+}
+
+#boat {
+	position: absolute;
+	top: 840%;
+	width: 23%;
+	animation-name: mymove;
+	animation-duration: 4000ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#cheers {
+	position: absolute;
+	width: 15%;
+	top: 875%;
+	animation-name: mymove2;
+	animation-duration: 4000ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mymove {
+	from {
+		left: 40px;
+	}
+	to {
+		left: 700px;
+	}
+}
+
+@-webkit-keyframes mymove2 {
+	from {
+		right: 40px;
+	}
+	to {
+		right: 250px;
+	}
+}
+
+/* slide 8-billede*/
+
+#slide8 {
+	height: 100%;
+	width: 100%;
+}
+
+/*side 9, citater,personer*/
+
+.container {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-auto-rows: 500px;
+	margin: 20px;
+	padding-top: 10%;
+}
+
+#person1 {
+	background-image: url(billeder/Pi.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin: 4%;
+}
+
+
+#person2 {
+	background-image: url(billeder/Tobias.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin: 4%;
+}
+
+#person3 {
+	background-image: url(billeder/laura.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin: 4%;
+}
+
+#personer-skrift {
+	text-align: center;
+	margin-top: 35%;
+	font-size: 100%;
+	color: transparent;
+	text-shadow: 0 5px 5px #f1f1f1;
+	transition: all 0.5s;
+	padding-top: 2%;
+	font-family: arial;
+}
+
+#personer-skrift:hover {
+	color: white;
+	-webkit-text-stroke: 2px black;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 130%;
+}
+
+/*slut-slide*/
+
+.slut-billede {
+	background-image: url(billeder/slut.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#slutskrift {
+	text-align: center;
+	font-size: 150%;
+	color: white;
+	font-family: 'Arapey', serif;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+	padding-top: 25%;
+	padding-bottom: 1%;
+	line-height: 110%;
+}
+
+#slutskrift2 {
+	text-align: center;
+	font-size: 109%;
+	color: #6890c3;
+	font-family: 'Arapey', serif;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+	padding-top: 25%;
+	padding-bottom: 1%;
+	line-height: 110%;
+}
+
+a {
+	text-decoration: none
+}
+
+.top {
+	text-align: center;
+	padding-top: 10%;
+	position: absolute;
+	z-index: +1;
+	animation-name: arrow;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+#pil2 {
+	padding-top: 20%;
+	position: absolute;
+	animation-name: arrow;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	width: 51.5%;
+	padding-left: 48%;
+
+}
+
+
+@media screen and (max-width: 600px) {
+	#overskrift {
+		font-size: 300%;
+	}
+	#underskrift {
+		font-size: 100%;
+	}
+	.logo {
+		width: 20%;
+	}
+	#citat {
+		font-size: 300%;
+		padding-bottom: 120%;
+	}
+	#popup-overskrift {
+		font-size: 150%;
+
+	}
+	.slut-skrift {
+		font-size: 130%;
+		padding-top: 80%;
+
+	}
+	#om {
+		margin-left: 14%;
+		margin-right: 14%;
+
+	}
+}
